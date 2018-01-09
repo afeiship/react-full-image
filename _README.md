@@ -22,4 +22,4 @@ IE 9: Works
 
 ## resources:
 + https://css-tricks.com/perfect-full-page-background-image/
-
++ http://t.qq.com/

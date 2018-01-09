@@ -21,7 +21,7 @@ class App extends React.Component{
   render(){
     return (
       <div className="hello-react-full-image">
-        <ReactFullImage ref='rc' src={require('./assets/bg-2.jpg')} />
+        <ReactFullImage ref='rc' src={require('./assets/yuanhua1.jpg')} />
     </div>
     );
   }

@@ -1,2 +1,2 @@
-import ReactFullImage from 'components/react-full-image';
+import ReactFullImage from './components';
 export default ReactFullImage;

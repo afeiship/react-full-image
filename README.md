@@ -1,53 +1,56 @@
 # react-full-image
 > Full page background image for react.
 
+## installation
+```shell
+npm install -S @feizheng/react-full-image
+```
+## properties
+| property        | type | description |
+| --------------- | ---- | ----------- |
+| className       | -    | -           |
+| value           | -    | -           |
+| onChange        | -    | -           |
 
-## properties:
-```javascript
+## usage
+1. import css
+  ```scss
+  @import "~@feizheng/react-full-image/dist/style.scss";
 
-  static propTypes = {
-    className:PropTypes.string
-  };
+  // customize your styles:
+  $react-full-image-options: ()
+  ```
+2. import js
+  ```js
+  import React from 'react';
+  import ReactDOM from 'react-dom';
+  import ReactFullImage from '@feizheng/react-full-image';
   
-```
-
-## usage:
-```jsx
-
-// install: npm install afeiship/react-full-image --save
-// import : import ReactFullImage from 'react-full-image'
-
-class App extends React.Component{
-  state = {
-
-  };
-
-  constructor(props){
-    super(props);
-    window.demo = this;
-    window.refs = this.refs;
-    window.rc = this.refs.rc;
+  // your app:
+  class App extends React.Component{
+    render(){
+      return (
+        <ReactFullImage />
+      )
+    }
   }
 
-  render(){
-    return (
-      <div className="hello-react-full-image">
-        <ReactFullImage ref='rc' src={require('./assets/yuanhua1.jpg')} />
-    </div>
-    );
-  }
-}
+  // render to dom:
+  ReactDOM.render(<App/>, document.getElementById('app'));
+  ```
 
-```
+## documentation
+- https://afeiship.github.io/react-full-image/
 
-## features:
-```conf
-Any version of good browsers: Safari / Chrome / Opera / Firefox
-IE 6: Borked - but probably fixable if you use some kind of fixed positioning shim
-IE 7/8: Mostly works, doesn't center at small sizes but fills screen fine
-IE 9: Works
-```
+## resources
+- https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
+- https://www.valentinog.com/blog/react-webpack-babel/
+- https://jestjs.io/docs/en/tutorial-react#snapshot-testing-with-mocks-enzyme-and-react-16
+- https://testing-library.com/docs/react-testing-library/api
 
-## resources:
-+ https://css-tricks.com/perfect-full-page-background-image/
-+ http://t.qq.com/
+## todos
+- [ ] Add: semver number for every build files.
+- [ ] Add: need output css files.
+- [ ] Add: PWA support for docs.
+- [ ] Add: source.map file for dist(`you can upload for production debug`).
+- [ ] BUG: npm run dev will clean dist.

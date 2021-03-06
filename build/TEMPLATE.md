@@ -12,10 +12,7 @@ npm install -S @jswork/react-full-image
 ```
 
 ## properties
-| Name      | Type   | Required | Default | Description                           |
-| --------- | ------ | -------- | ------- | ------------------------------------- |
-| className | string | false    | -       | The extended className for component. |
-
+__GENERATE_DOCS__
 
 ## usage
 1. import css
@@ -30,39 +27,7 @@ npm install -S @jswork/react-full-image
   ```
 2. import js
   ```js
-  import ReactDemokit from '@jswork/react-demokit';
-  import React from 'react';
-  import ReactDOM from 'react-dom';
-  import ReactFullImage from '@jswork/react-full-image';
-  import './assets/style.scss';
-
-  import '@jswork/next-sample';
-
-  const images = [
-    'bg-2.jpg',
-    'bg.jpg',
-    'welcome_bg.2233ee0f.png',
-    'yuanhua1.jpg'
-  ];
-
-  class App extends React.Component {
-    render() {
-      const item = nx.sample(images);
-      return (
-        <ReactDemokit
-          className="p-3 app-container"
-          url="https://github.com/afeiship/react-full-image">
-          <ReactFullImage
-            src={require(`./assets/${item}`).default}
-            style={{ backgroundColor: '#eef4fa' }}
-          />
-        </ReactDemokit>
-      );
-    }
-  }
-
-  ReactDOM.render(<App />, document.getElementById('app'));
-
+__GENERATE_DAPP__
   ```
 
 ## documentation

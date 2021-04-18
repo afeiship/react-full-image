@@ -48,6 +48,7 @@ npm install -S @jswork/react-full-image
   class App extends React.Component {
     render() {
       const item = nx.sample(images);
+      console.log(item);
       return (
         <ReactDemokit
           className="p-3 app-container"

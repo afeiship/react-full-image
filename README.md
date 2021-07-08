@@ -15,6 +15,7 @@ npm install -S @jswork/react-full-image
 | Name      | Type   | Required | Default | Description                           |
 | --------- | ------ | -------- | ------- | ------------------------------------- |
 | className | string | false    | -       | The extended className for component. |
+| animation | enum   | false    | null    | The animation type.                   |
 
 
 ## usage
@@ -42,7 +43,8 @@ npm install -S @jswork/react-full-image
     'bg-2.jpg',
     'bg.jpg',
     'welcome_bg.2233ee0f.png',
-    'yuanhua1.jpg'
+    'yuanhua1.jpg',
+    'alo7.png'
   ];
 
   class App extends React.Component {
@@ -54,6 +56,7 @@ npm install -S @jswork/react-full-image
           className="p-3 app-container"
           url="https://github.com/afeiship/react-full-image">
           <ReactFullImage
+            animation="blur"
             src={require(`./assets/${item}`).default}
             style={{ backgroundColor: '#eef4fa' }}
           />

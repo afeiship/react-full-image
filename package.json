@@ -1,6 +1,6 @@
 {
   "name": "@jswork/react-full-image",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Full page background image for react.",
   "main": "dist/index.js",
   "scripts": {

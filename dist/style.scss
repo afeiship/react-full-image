@@ -31,7 +31,7 @@ $react-full-image-options: (
   // https://alo7.italent.cn/Login
   &[data-animation="blur"] {
     filter: blur(20px) drop-shadow(0 40px 0);
-    &.loaded {
+    &[data-loaded="true"] {
       filter: blur(0) drop-shadow(0 0 0);
     }
   }

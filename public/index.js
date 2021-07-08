@@ -10,7 +10,8 @@ const images = [
   'bg-2.jpg',
   'bg.jpg',
   'welcome_bg.2233ee0f.png',
-  'yuanhua1.jpg'
+  'yuanhua1.jpg',
+  'alo7.png'
 ];
 
 class App extends React.Component {

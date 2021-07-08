@@ -1,8 +1,11 @@
-$react-full-image-options:(
-  min-width: 1280px
+$react-full-image-options: (
+  min-width: 1280px,
 );
-.react-full-image{
-  $min-width: map-get($map: $react-full-image-options, $key: min-width );
+.react-full-image {
+  $min-width: map-get(
+    $map: $react-full-image-options,
+    $key: min-width,
+  );
 
   /* Set rules to fill background */
   min-height: 100%;
@@ -16,11 +19,20 @@ $react-full-image-options:(
   position: fixed;
   top: 0;
   left: 0;
+  transition: filter 0.5s ease-in;
 
-  @media screen and (max-width: $min-width){
+  @media screen and (max-width: $min-width) {
     & {
       left: 50%;
       margin-left: -$min-width/2;
+    }
+  }
+
+  // https://alo7.italent.cn/Login
+  &[data-animation="blur"] {
+    filter: blur(20px) drop-shadow(0 40px 0);
+    &[data-loaded="true"] {
+      filter: blur(0) drop-shadow(0 0 0);
     }
   }
 }

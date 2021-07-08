@@ -23,6 +23,7 @@ class App extends React.Component {
         className="p-3 app-container"
         url="https://github.com/afeiship/react-full-image">
         <ReactFullImage
+          animation="blur"
           src={require(`./assets/${item}`).default}
           style={{ backgroundColor: '#eef4fa' }}
         />

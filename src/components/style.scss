@@ -1,6 +1,9 @@
+@use "sass:math";
+
 $react-full-image-options: (
   min-width: 1280px,
 );
+
 .react-full-image {
   $min-width: map-get(
     $map: $react-full-image-options,
@@ -24,7 +27,7 @@ $react-full-image-options: (
   @media screen and (max-width: $min-width) {
     & {
       left: 50%;
-      margin-left: -$min-width/2;
+      margin-left: math.div($min-width, -2);
     }
   }
 

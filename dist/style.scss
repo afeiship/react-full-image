@@ -23,6 +23,7 @@ $react-full-image-options: (
   top: 0;
   left: 0;
   transition: filter 0.5s ease-in;
+  -webkit-user-drag: none;
 
   @media screen and (max-width: $min-width) {
     & {

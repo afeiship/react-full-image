@@ -12,11 +12,7 @@ npm install -S @jswork/react-full-image
 ```
 
 ## properties
-| Name      | Type   | Required | Default | Description                           |
-| --------- | ------ | -------- | ------- | ------------------------------------- |
-| className | string | false    | -       | The extended className for component. |
-| animation | enum   | false    | null    | The animation type.                   |
-
+[object Promise]
 
 ## usage
 1. import css
